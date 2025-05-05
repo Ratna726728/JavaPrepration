@@ -144,4 +144,84 @@ Now we can execute using java command:
 
 java Test
 
+:: || Keywords and Data types || ::
+
+:: Keywords ::
+
+Keywords are nothing but reserved words whose meaning is aleady define in computer memory.
+
+There are total 49 keywords.
+
+Keywords are always starts with lowercase letter and can be identify easily.
+
+:: Datatypes ::
+
+Data types are used to represent type of data or information which will be stored into variable.
+
+There are 2 types of data types:
+1. Primitive Data type  2. Non-primitive data type
+
+Primitive Data types:- 
+A data type which contains numeric, boolean and character data.
+
+A data type whose memory size is fixed.
+
+A data type which always starts with lower case letter.
+
+All primitive data types are Keywords.
+
+Primitive data  types as follows:
+1.byte 2.short 3.int 4.long 5.float 6.double 7.char 8.boolean
+
+Code example of primitive data type is at Day01 folder PrimitiveDataType.java file
+
+
+Non-primitive Data Type:-
+A data type which contains Array, String, Interface,etc.
+
+A data type whose memory size is not fixed.
+
+A data type which always starts with Upper case letter
+
+Non-primitive data types are identifiers.
+
+
+::IDENTIFIERS::
+
+An Identifier is the name given to a programming element such as Variable, method, class or interface.
+
+
+::Variable::
+
+An entity that may vary during execution of program.
+
+A variable is a name which is associated with a value that can be changed.
+
+There are 3 types of variables:
+1. Local Variable
+2. Global Variable
+3. Static Variable
+
+1. Local Variable:
+The variable are defined inside of method and inside the class.
+It is also declared in constructor or block.
+scope is within the method, constructor or block only.
+Local variables are stored in Stack area.
+Unlike global variable these variables are not initialized automatically.
+
+2. Global Variable:
+
+The variable are defined outside of method but inside the class.
+It is called instance variable
+Global variables are stored inside heap area.
+They are initialized automatically by jvm incase of not initialized
+The scope of global variable is anywhere in the class.
+
+3. Static Variable:
+
+If we put static keyword infront of global variables it becomes static variables.
+
+
+
+
 
