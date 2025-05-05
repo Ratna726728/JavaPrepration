@@ -1,0 +1,147 @@
+Java is a object oriented programming language developed by sun microsystem in the year of 1995. 
+
+James Gosling is known as Father of Java technology.
+
+Java known for being simple, portable, secure and robust.
+
+Java uses WORA principle(Write once, run anywhere)
+
+Java has 3 main area of discussion:
+1. JVM  2. JRE   3. JDK
+
+::JVM::
+
+JVM stands for Java Virtual Machine.
+It is a runtime environment in which applications are executed.
+
+JVM has 5 main areas:
+1. Class Loader 2. Memory Area 3. Execution Engine 4. Native method Interface 5. Native method Libraries
+
+Class Loader:- whenever we run java programs it is first loaded by classloader into memory, It is used to load .class files.
+
+Memory Area:-
+
+Class Area: Also known as method area. It will store the information about method code, method name, fields,etc.
+
+Head Area: It is a runtime area where objects are stored.
+
+Stack Area: It is used to store information about local variables.
+
+PC register: It includes address of jvm instruction to be currently executing. PC stand for program counter.
+
+Native Method Stack: Stores information of native methods only.
+
+Native method Interface:- Interface that interacts with the native method libraries and execution engine required for execution.
+
+Execution Engine :- It contains Java compiler and interpreter information.
+
+Java Native Liraries:- Contains set of libraries written in other programming languages.
+
+
+
+::JRE::
+
+It includes set of libraries, other files and rt.jar file that a virtual machine requires at runtime.
+
+
+
+::JDK::
+
+It includes JRE + development tools such as JAVAC, Java, Javadocs, etc.
+
+
+
+:: JAVA SYNTAX ::
+
+Java runs on different platforms, but programmers write it the same way.
+
+To write a Java program we need a class, A class is a blueprint or template for an object in Java.
+
+here is how we write a class:
+
+public class Test{
+}
+
+the Test is the name of class, which is with class keyword and public keyword. A class body can be written inside of curly brackets {}.
+
+A class is save with .java extension which is a java file saving extension.
+
+Inside the class we had a main() method which lists our program tasks:
+
+public class Test{
+
+	public static void main(String[] args){
+	
+	}
+}
+
+Now, this is the common syntax which we use to write a java program.
+we modify the code according to our necessity but the basic structure will remain the same.
+
+You can find the HelloWorld.java file in the Day01 folder.
+in this class we have wrote a simple program to print the statement on the console:
+
+
+public class Test{
+
+        public static void main(String[] args){
+		System.out.println("Hello World!");
+
+        }
+}
+
+Now in above program we are printing a statement using println statement.
+Here,
+System: is a built-in java class
+out: is a short form of output
+println: is a short of print line
+
+we have 2 types of print statements:
+1. println   2. print
+
+
+If you use println() the cursor is moved to the next line. If you use print() the cursor stays on the same line.
+
+We have a code for the same HideAndSeek.java in Day01 folder.
+
+: COMMENTS :
+
+
+A comment is a piece of text within a program that is not executed. It can be used to provide additional
+information to aid in understanding the code.
+
+we have 2 types of comments:
+1. single line comments : // for only one line
+
+//Sun Microsystems announced the release of Java in 1995
+
+
+
+2. Multiline commnets : /*.....*/ for multiple lines to comment out.
+
+/*James Gosling is a Canadian engineer who
+created Java while working at Sun Microsystems.
+His favorite number is the square root of 2!
+*/
+
+You can find the example in Day01 JavaComments.java file
+
+: JAVA COMPILER :
+Java is a compiled programming language, meaning the code we write in a .java file is transformed into byte code by a
+compiler before it is executed by the Java Virtual Machine on your computer.
+
+A compiler is a program that translates human-friendly programming languages into other programming languages that computers can execute.
+
+to compile .java file use below command in command prompt
+
+javac Test.java
+
+compiled one doesn't throw any error, you can do ls to find the same file name with .class extension
+
+if you can see .class extention files means programm compiled successfully.
+
+Now we can execute using java command:
+
+java Test
+
+
