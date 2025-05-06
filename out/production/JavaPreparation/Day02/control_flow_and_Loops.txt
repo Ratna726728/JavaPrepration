@@ -1,0 +1,107 @@
+:: Type Casting ::
+
+Type casting is when you assign a value of one primitive data type to another type.
+
+Type casting is applicable to primitive data types.
+
+There are 2 types of type casting:
+1. Widening casting
+2. Narrowing casting
+
+1. Widening casting:
+
+Widening casting is done automatically when passing a smaller size data type to a larger size type.
+
+byte >> short >> char >> int >> long >> float >> double
+
+Please refer example code from Day02/Widening.java
+2. Narrowing casting:
+
+Narrowing casting must be done manually by placing the type in parantheses () in front of values.
+
+double >> float >> long >> int >> char >> short >> byte
+
+Please refer example code from Day02/Narrowing.java
+
+
+:: Java Operators ::
+
+Operators are used to perform operations on variables and values.
+
+List of operators is as such follows:
+1. Arithmetic Operator:
+
+[ + , - , * , / , % ]
+
+2. Logical operator:
+
+Logical AND operator(&&) : if both conditions are true then result is true else false.
+Logical OR Operator(||) : if both conditions are false then result is false else true.
+
+3. Relational Operator:
+
+Greater Than(>)
+Less than(<)
+Greater than or equal to(>=)
+less than or equal to(<=)
+Equal to (==)
+Not equal to (!=)
+
+4. Assignment operator:
+
+variable = value;
+
+= this sign is assignment operator
+
+5. Bitwise Operator:
+
+Bitwise AND operator(&) : if both conditions are true then true else false
+Bitwise OR operator(|) : if both conditions are false then false else true
+
+6. Unary Operator:
+
+increment (++)
+decrement (--)
+
+
+7. Ternary Operator:
+
+It includes three operands.
+
+syntax:
+(condition)?var1:var2;
+
+
+8. Shift Operator
+
+Right shift operator:
+
+int a =10;
+a>>2;
+
+10>>2 <==> 10/2^2 <==> 10/4 ==2.5 == 2
+
+Left shift Operator:
+int a =10;
+a<<2;
+
+10<<2 <==> 10*2^2 <==> 10*4= 40
+
+
+9. New Operator
+
+the new operator is used to create new objects and allocate memory for them on the heap.
+new operator:
+Invokes the constructor.
+Allocates memory on the heap.
+Returns a reference to the created object.
+
+10. Dot(.) operator
+
+the dot operator (.) is used to access:
+Class members (fields and methods)
+Object members
+Packages and classes
+Nested classes or interfaces
+
+
