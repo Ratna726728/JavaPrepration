@@ -105,3 +105,40 @@ Packages and classes
 Nested classes or interfaces
 
 Coding examples are in Day02/Operators.java file
+
+
+:: CONTROL STATEMENT ::
+
+Control statements in Java are used to control the flow of execution in a program based on conditions or loops. 
+They allow your program to make decisions, repeat tasks, or jump to different parts of the code.
+
+There are 3 types of control statements:
+1. Decision-making statements
+2. Looping statements
+3. Jumping statements
+
+
+
+1. Decision-making statements:
+
+These are used to execute different blocks of code based on certain conditions.
+
+Types of decision making statements:
+i. if statement
+ii. if-else statement
+iii. if-else-if statement
+iv. Nested if statement
+v. switch statement
+
+i. if statement:
+
+If statement is true then if block is executed.
+
+syntax:
+
+if(condition){
+statement;
+}
+
+
+
