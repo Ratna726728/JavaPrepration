@@ -141,4 +141,124 @@ statement;
 }
 
 
+ii. if-else statement:
+
+If the statement is true then if block is executed, if statement is false then else block is
+executed.
+
+syntax:
+
+if(condition){
+statement1;
+}else{
+statement2;
+}
+
+iii. if-else-if statement:
+
+the if-else-if ladder statement executes one condition from multiple statements.
+
+if(condition1){
+statement1;
+}else if(condition2){
+statement2;
+}else if(condition3){
+statement3;
+}else{
+statement4;
+}
+
+
+iv. Nested if statement:
+
+The nested if statement represents the if block within another if block.
+
+Syntax:
+
+if(condition1){
+if(condition2){
+}
+}
+
+v. Switch Statement:
+
+A switch statement in java is used to execute a single statement from multiple conditions.
+
+Syntax:
+
+switch(expression){
+case1:
+statement1;
+break;
+
+case2:
+statement2;
+break;
+
+case3:
+statement3;
+break;
+
+default:
+default statement;
+
+}
+
+
+2. looping statement:
+
+loops are used to execute a set of instructions repeatedly when some conditions beacome true.
+
+There are 3 types of Loops in Java:
+i. for loop
+ii. while loop
+iii. do while loop
+
+i. for loop:
+
+for loop is used to iterate and evaluate a code multiple times.
+
+when to use- If the number of iterations are fixed.
+
+syntax:
+
+for(initialization; condition; increament/decrement){
+statment1;
+}
+
+
+ii. While loop:
+
+The while loop evalutes a certain condition. If the condition is true, the code executed.
+this process is continued until the specified condition becomes false.
+
+when to use- if the number of iterations is not fixed, it is recommended to use while loop.
+
+syntax:
+
+initialization;
+while(condition){
+statements;
+increment/decrement;
+}
+
+
+iii. Do while loop:
+
+the do while loop is similar to the while loop, the only difference being that the condition
+in the do-while loop is evaluated after the execution of the loop body. This gurantees that
+the loop is executed at least once.
+
+When to use - If the number of iteration is not fixed and you must have to execute the loop
+at least once, it is recommended to use the do-while loop.
+
+syntax:
+
+Initialization;
+do{
+statements;
+increment/decrement;
+}while(condition);
+
+Codes in day02 folder
 
