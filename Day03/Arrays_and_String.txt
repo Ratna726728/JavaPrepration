@@ -1,0 +1,41 @@
+:: JUMPING STATEMENTS ::
+
+There are 2 types of jumping statements in java
+1. Break
+2. Continue
+
+1. Break Statement:
+
+The break statement in java is used to terminate a loop and break the current flow of program. or to jump out
+of the loop.
+
+break is a keyword.
+
+syntax:
+jump-statement;
+break;
+
+2. Continue statement:
+
+continue is a keyword.
+
+To jump to the next iteration of the loop, we make use of the continue statement. 
+This statement continues the current flow of the program and skips part of the code at the specified condition
+
+or 
+
+It will skip the current iteration and continue with next iteration.
+
+syntax:
+
+jump-statement;
+continue;
+
+
+:: || ARRAYS AND STRINGS || ::
+
+::ARRAYS::
+
+An array is a container object that holds a fixed number of values of a single type.
+
+
