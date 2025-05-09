@@ -1,0 +1,77 @@
+:: JUMPING STATEMENTS ::
+
+There are 2 types of jumping statements in java
+1. Break
+2. Continue
+
+1. Break Statement:
+
+The break statement in java is used to terminate a loop and break the current flow of program. or to jump out
+of the loop.
+
+break is a keyword.
+
+syntax:
+jump-statement;
+break;
+
+2. Continue statement:
+
+continue is a keyword.
+
+To jump to the next iteration of the loop, we make use of the continue statement. 
+This statement continues the current flow of the program and skips part of the code at the specified condition
+
+or 
+
+It will skip the current iteration and continue with next iteration.
+
+syntax:
+
+jump-statement;
+continue;
+
+
+:: || ARRAYS AND STRINGS || ::
+
+::ARRAYS::
+
+An array is a container object that holds a fixed number of values of a single type.
+
+The length of an array is established when the array is created. After creation, its length is fixed.
+
+Arrays contains homogeneous data type data in array container object.
+
+Each item in an array is called an element, and each element is accessed by its numerical index. The numbering begins with 0, to the last element.
+
+For example if any array has length 10 then the first element wil be at 0th index and last element must be on 9th index.
+
+By using the indexes we can easily locate the data from the container object.
+
+There are 2 types of arrays:
+1. single dimensional array
+2. Multi-dimensional array
+
+
+SYNTAX to declare an ARRAY: 
+1. datatype[] arr;
+2. datatype []arr;
+3. datatype arr[];
+
+
+How to instantiate an array:
+
+int[] numbers = new int[3];
+
+
+FOR-EACH loop for Java Array::
+
+The java for-each loop can prints the array elements one by one. It holds an array 
+element in a variable, then executes the body of the loop.
+
+syntax:
+for(data_type variable : array){
+//body of the loop
+}
+
+Code on Arrays are in Day03 folder

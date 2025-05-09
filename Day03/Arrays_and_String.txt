@@ -75,3 +75,48 @@ for(data_type variable : array){
 }
 
 Code on Arrays are in Day03 folder
+
+:: Array Manipulations ::
+
+Arrays are a powerful and useful concept used in programming. Java SE provides methods to perform some of the most common manipulations related to arrays. 
+
+For instance, the ArrayCopyDemo example uses the arraycopy method of the System class instead of manually iterating through the elements of the source array and placing 
+each one into the destination array. 
+
+This is performed behind the scenes, enabling the developer to use just one line of 
+code to call the method.
+
+For our convenience, Java SE provides several methods for performing array 
+manipulations (common tasks, such as copying, sorting and searching arrays) in the 
+java.util.Arrays class.
+
+Some other useful operations provided by methods in the java.util.Arrays class are:
+
+1. Searching an array for a specific value to get the index at which it is placed 
+(the binarySearch method).
+
+2. Comparing two arrays to determine if they are equal or not (the equals method).
+
+3. Filling an array to place a specific value at each index (the fill method).
+
+4. Sorting an array into ascending order. This can be done either sequentially, using the sort method, or concurrently, using the parallelSort method introduced in 
+Java SE 8. Parallel sorting of large arrays on multiprocessor systems is faster than 
+sequential array sorting.
+
+5. Creating a stream that uses an array as its source (the stream method). 
+For example, the following statement prints the contents of the copyTo array in the 
+same way as in the previous example:
+
+java.util.Arrays.stream(copyTo).map(coffee -> coffee + " ").forEach(System.out::print);
+See Aggregate Operations for more information about streams.
+
+6. Converting an array to a string. The toString method converts each element of the 
+array to a string, separates them with commas, then surrounds them with brackets. For example, the following statement converts the copyTo array to a string and prints it:
+
+System.out.println(java.util.Arrays.toString(copyTo));
+This statement prints the following:
+
+[Cappuccino, Corretto, Cortado, Doppio, Espresso, Frappucino, Freddo]
+
+
+
