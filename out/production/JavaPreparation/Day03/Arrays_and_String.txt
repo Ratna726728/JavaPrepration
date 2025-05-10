@@ -200,3 +200,138 @@ This statement prints the following:
 
 
 
+
+
+:: || Strings || ::
+
+String is the class that represents sequence of character enclosed by double quotes and every character is stored in 
+16 bits, i.e., using UTF 16-bit encoding.
+
+Package is java.lang
+
+A string acts the same as an array of characters.
+
+String class implements Serializable, comparable, char sequence interface.
+
+String is the immutable, once string object is created, it cannot changed but new string objcet is created.
+When we say something is immutable, it means that once it is created, it cannot be changed. In Java, this concept 
+applies to strings, which means that once a string object is created, its content cannot be changed. 
+If we try to change a string, Java does not modify the original one, it creates a new string object instead.
+
+Java provides a robust and flexible API for handling strings, allowing for various operations such as concatenation, 
+comparison, and manipulation.
+
+There are two ways to create a string in Java: 
+
+1. String Literal
+2. Using new Keyword
+
+
+1. String Lieteral(Static Memory):
+
+To make Java more memory efficient(because no new objects are created if it exists already in the
+string constant pool). 
+
+Each time when you create string literal, the JVM check string constant pool first, 
+if the string object is already present in the pool, reference to pooled instance is returned.
+if string does not present in the pool, new string instance is created and placed in pool.
+
+
+java Uses concept of string lieteral because to make java more memory effiecient( because no new object is created if it exist already in string constant pool.)
+
+
+2. using new Keyword:
+
+Example: String s = new String("test");
+
+In Such case, JVM will create the new string object in normal(non-pool) heap memory and
+lietral "test" will be placed in string constant pool. 
+the variable s refer to object in heap(non-pool)
+
+Here if we use new keyword, it will create 2 objects.
+
+
+common String methods:
+
+| Method                                | Description                         |
+| ------------------------------------- | ----------------------------------- |
+| `length()`                            | Returns length of string            |
+| `charAt(int index)`                   | Returns character at given index    |
+| `substring(int begin, int end)`       | Extracts substring                  |
+| `equals(String another)`              | Compares content                    |
+| `equalsIgnoreCase(String)`            | Compares ignoring case              |
+| `compareTo(String another)`           | Lexicographical comparison          |
+| `toLowerCase()` / `toUpperCase()`     | Case conversion                     |
+| `trim()`                              | Removes leading/trailing spaces     |
+| `replace(old, new)`                   | Replaces characters                 |
+| `contains(String)`                    | Checks if string contains substring |
+| `indexOf(char)` / `lastIndexOf(char)` | Finds character position            |
+| `split(String regex)`                 | Splits string by regex              |
+
+
+
+STRING BUFFER CLASS:
+
+The StringBuffer class is part of the java.lang package and is used to create mutable (modifiable) sequences of 
+characters. Unlike String, which is immutable, StringBuffer allows you to modify the contents of the string without 
+creating new objects.
+
+| Feature       | Description                                          |
+| ------------- | ---------------------------------------------------- |
+| Mutability    | Contents can be changed                              |
+| Thread Safety | **Synchronized** (safe for multi-threading)          |
+| Performance   | Slower than `StringBuilder` in single-threaded cases |
+| Package       | `java.lang.StringBuffer`                             |
+
+
+- java.lang.StringBuffer extends (or inherits from) Object class.
+
+- All Implemented Interfaces of StringBuffer classes are Serializable, Appendable, CharSequence.
+
+- public final class StringBuffer extends Object implements Serializable, CharSequence, Appendable.
+
+- String buffers are safe for use by multiple threads. The methods can be synchronized wherever necessary so that all the operations on any particular instance behave as if they occur in some serial order.
+
+- Whenever an operation occurs involving a source sequence (such as appending or inserting from a source sequence)    this class synchronizes only on the string buffer performing the operation, not on the source.
+
+- It inherits some of the methods from the Object class which such as clone(), equals(), finalize(), getClass(),       hashCode(), notifies(), notifyAll().
+
+
+STRING BUILDER CLASS:
+
+The StringBuilder class is part of the java.lang package and is used to create mutable sequences of characters like   StringBuffer, but with better performance in single-threaded environments.
+
+Key Features:
+| Feature       | Description                                         |
+| ------------- | --------------------------------------------------- |
+| Mutability    |   Yes (can change contents)                         |
+| Thread Safety |   No (not synchronized)                             |
+| Performance   |    Faster than `StringBuffer` (no overhead of sync) |
+| Use-case      | Best for **single-threaded** applications           |
+| Package       | `java.lang.StringBuilder`                           |
+
+Methods:
+
+| Method                   | Description                    |
+| ------------------------ | ------------------------------ |
+| `append(String)`         | Adds text at the end           |
+| `insert(int, String)`    | Inserts text at a given index  |
+| `replace(int, int, str)` | Replaces a range with new text |
+| `delete(int, int)`       | Deletes characters in range    |
+| `reverse()`              | Reverses the string            |
+| `capacity()`             | Returns current capacity       |
+| `ensureCapacity(int)`    | Expands buffer if needed       |
+| `toString()`             | Converts to `String`           |
+
+
+String vs StringBuffer vs StringBuilder
+
+| Feature     | `String`                 | `StringBuilder`                  | `StringBuffer`       |
+| ----------- | ------------------------ | -------------------------------- | -------------------- |
+| Mutability  |  Immutable               | Mutable                          |   Mutable            |
+| Thread-safe | (by default)             | No                               | Yes (synchronized)   |
+|Performance  | Slow                     |   Fast (no sync)                 |    Slower (sync)     |
+| Use-case    | Text that doesn't change | High-performance single-threaded | Multi-threaded       |
+
+
+
