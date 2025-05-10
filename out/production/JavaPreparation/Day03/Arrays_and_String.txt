@@ -95,13 +95,76 @@ Some other useful operations provided by methods in the java.util.Arrays class a
 1. Searching an array for a specific value to get the index at which it is placed 
 (the binarySearch method).
 
+STEPS:
+-----------------------------------------------------------------------------------------------------
+i. create and sort array
+e.g. 
+int arr[]=new int[]{10,54,7,24,63,100};
+Arrays.sort(arr);
+
+ii. print the sorted array(optional step just to confirm whether array is sorted or not)
+e.g.
+Syetem.out.println("Sorted Array : "+Arrays.toString(arr));
+
+iii. Use binarySearch to find the index of a value
+e.g.
+int searchNum = 7 ;
+int index = Arrays.binarySearch(arr, searchNum);
+
+iv. Print the result
+e.g.
+if (index >= 0) {
+  System.out.println("Element " + searchNum + " found at index: " + index);
+} else {
+  System.out.println("Element " + searchNum + " not found.");
+}
+
+
+Let's understand this with the code in Day03/ArrayExample/BinarySearch.java
+----------------------------------------------------------------------------------------------------
+
 2. Comparing two arrays to determine if they are equal or not (the equals method).
 
+STEPS:
+----------------------------------------------------------------------------------------------------
+i. Create 2 or more arrays, atleast 2 arrays are required
+
+ii. compare arrays using Array.equals()
+e.g.
+boolean isEqual1 = Arrays.equals(array1, array2);
+
+Let's understand this with the code in Day03/ArrayExample/CompareArrays.java
+
+----------------------------------------------------------------------------------------------------
+
 3. Filling an array to place a specific value at each index (the fill method).
+
+STEPS
+----------------------------------------------------------------------------------------------------
+i. Create an array of size
+e.g.        
+int[] numbers = new int[5];
+
+ii. Fill the array with the value 
+e.g.        
+Arrays.fill(numbers, 7);
+
+iii. Print the filled array
+e.g.
+System.out.println("Array after fill: " + Arrays.toString(numbers));
+
+
+Let's understand thsi with the code in Day03/ArrayExample/FillMethod.java
+
+---------------------------------------------------------------------------------------------------
 
 4. Sorting an array into ascending order. This can be done either sequentially, using the sort method, or concurrently, using the parallelSort method introduced in 
 Java SE 8. Parallel sorting of large arrays on multiprocessor systems is faster than 
 sequential array sorting.
+
+--------------------------------------------------------------------------------------------------
+Already done in 1.binary search
+--------------------------------------------------------------------------------------------------
 
 5. Creating a stream that uses an array as its source (the stream method). 
 For example, the following statement prints the contents of the copyTo array in the 
@@ -109,6 +172,23 @@ same way as in the previous example:
 
 java.util.Arrays.stream(copyTo).map(coffee -> coffee + " ").forEach(System.out::print);
 See Aggregate Operations for more information about streams.
+
+STEP
+--------------------------------------------------------------------------------------------------
+i. Create an array of strings
+e.g.
+String[] copyTo = {"Espresso", "Latte", "Cappuccino", "Mocha"};
+
+ii. Use Arrays.stream to create a stream from the array
+Add a space after each element and print using forEach
+e.g.
+Arrays.stream(copyTo)
+              .map(coffee -> coffee + " ")
+              .forEach(System.out::print);
+
+CODE Day03/ArraysExample/StreamArray.java
+
+---------------------------------------------------------------------------------------------------
 
 6. Converting an array to a string. The toString method converts each element of the 
 array to a string, separates them with commas, then surrounds them with brackets. For example, the following statement converts the copyTo array to a string and prints it:
