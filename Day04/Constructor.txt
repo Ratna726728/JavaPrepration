@@ -1,0 +1,91 @@
+:: CONSTRUCTOR ::
+
+In Java, constructors play an important role in object creation. 
+
+A constructor is a special block of code that is called when an object is created. 
+
+It's main job is to initialize the object to set up its internal state or to assign default values to its attributes. 
+
+This process happens automatically when we use the “new” keyword to create an object.
+
+It's Name is same as class name.
+
+It's Invoke by JVM automatically when you create the object of class.
+
+It doesn't return anything even void also.
+
+Java Constructors cannot be abstract, static , final and synchornized.
+
+Constructor cannot be overloaded because we can write same name with different arguments.
+
+There are 3 types of constructors:
+
+1. Default constructor (no-argument constructor)
+2. Parameterized constructor.
+3. Copy constructor.
+
+1. Default Constructor: 
+
+A constructor that does not accept any arguments called as default constructor.
+
+A constructor that has no parameters.
+
+A default constructor is invisible And if we write a constructor with no arguments, the compiler does not create a default constructor.
+
+The default constructor can be implicit or explicit.
+
+i. Implicit Default Constructor: 
+
+If no constructor is defined in a class, the Java compiler automatically provides a default constructor. This constructor doesn’t take any parameters and initializes the object with default values, 
+such as 0 for numbers, null for objects.
+
+ii. Explicit Default Constructor: 
+
+If we define a constructor that takes no parameters, it’s called an explicit default constructor. 
+This constructor replaces the one the compiler would normally create automatically. 
+Once you define any constructor (with or without parameters), the compiler no longer provides the default constructor for you.
+
+2. Parameterized constructor:
+
+A constructor that has parameters is known as parameterized constructor. 
+
+If we want to initialize fields of the class with our own values, then use a parameterized constructor.
+
+3. Copy Constructor: 
+
+Unlike other constructors copy constructor is passed with another object which copies the data available from the passed object to the newly created object.
+
+
+
+::CONSTRUCTOR CHAINING::
+
+A constructor is called from another constructor in the same class.
+
+It occurs thorough Inheritance.
+
+When we create an instance of a derived class, all the constructors of the inherited class are first
+invoked, after that the constructor of the calling class is invoked.
+
+|| RULES ||
+
+1. An Expression that uses this keyword must be the first line of the constructor.
+
+2. Order does not matter in constructor chaining.
+
+3. There must exist at least one constructor that does not use this keyword.
+
+
+|| How to Achieve the constructor chaining ||
+
+There are 2 ways to achieve constuctor chaining:
+
+1. Within the same class-
+
+if the constructors belong to the same class, we use this keyword.
+
+2. From the base class and derived class.
+
+if the constructor belong to different classes, we use the super keyword to call the constuctor from the 
+base class.
+
+
