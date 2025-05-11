@@ -1,0 +1,99 @@
+::Methods::
+
+Java Methods are blocks of code that perform a specific task. A method allows us to reuse code, improving both efficiency and organization.
+
+You can pass data, known as parameters, into a method.
+
+Methods are used to perform certain actions, and they are also known as functions.
+
+All methods in Java must belong to a class.
+
+Syntax of the method:
+
+<access_specifiers> return_type methodName(parameter1, parameter2){
+//body of method
+}
+
+More generally, method declarations have six components, in order:
+
+1. Modifiers:—
+such as public, private, and others you will learn about later.
+
+2. The return type:—
+the data type of the value returned by the method, or void if the method does not return a value.
+
+3. The method name:—
+the rules for field names apply to method names as well, but the convention is a little   different.
+
+4. The parameter list in parenthesis:-
+a comma-delimited list of input parameters, preceded by their data types, enclosed by 
+parentheses, (). If there are no parameters, you must use empty parentheses.
+
+5. An exception list:—
+The exceptions the method might throw (optional).
+
+6.The method body, enclosed between braces:—
+the method's code, including the declaration of local variables, goes here.
+
+:TYPES OF METHODS
+
+1. Pre-defined methods
+2. User-defined methods
+
+1. Pre-defined methods:
+
+Predefined methods are the method that is already defined in the Java class libraries. 
+It is also known as the standard library method or built-in method. 
+for example random() method which is present in the Math class and we can call it using   the ClassName.methodName()
+
+
+2. User-defined Methods:
+
+The method written by the user or programmer is known as a user-defined method. 
+These methods are modified according to the requirement.
+
+
+:DIFFERENT WAYS TO CREATE METHODS
+
+1. Static Methods
+2. Non-static methods
+
+1. Static Method:
+Access the static data using class name. 
+Declared inside class with static keyword.
+
+We can call this method by 3 ways:
+
+i. using class name
+Example.test();
+
+ii. by creating object of class
+Example example = new Example();
+example.test();
+
+iii. by method name
+test();
+
+2. Non-static method:
+
+Access the instance data using the object name. 
+Declared inside a class.
+Don't use static keyword.
+
+We can call this method by creating object of class, hence called as instance method.
+Example example = new Example();
+example.test();
+
+
+:DIFFERENT WAYS TO RETURN TO THE METHOD IN JAVA
+
+We dont use float, int return type as method even we void and string are also very rarely used.
+
+The most preferrable way is return object to method or value from object in java.
+
+public class Employee{
+	public Employee addEmployee{
+	}
+}
+
+
