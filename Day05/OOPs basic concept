@@ -1,0 +1,124 @@
+This lesson will introduce you to objects, classes, inheritance, interfaces, and packages.
+
+ :: What is an Object?
+
+Objects are key to understanding object-oriented technology.
+
+Real-world objects share two characteristics: They all have state and behavior.
+e.g.
+Dogs have state (name, color, breed, hungry) and behavior (barking, fetching, wagging tail).
+
+Software objects are conceptually similar to real-world objects: they too consist of state
+and related behavior.
+
+An object stores its state in fields (variables in some programming languages) and exposes its
+behavior through methods (functions in some programming languages).
+
+Bundling code into individual software objects provides a number of benefits, including:
+
+Modularity:
+The source code for an object can be written and maintained independently of the source code for other
+objects. Once created, an object can be easily passed around inside the system.
+
+Information-hiding:
+By interacting only with an object's methods, the details of its internal implementation remain hidden
+from the outside world.
+
+Code re-use:
+If an object already exists (perhaps written by another software developer), you can use
+that object in your program. This allows specialists to implement/test/debug complex, task-specific
+objects, which you can then trust to run in your own code.
+
+Pluggability and debugging ease:
+If a particular object turns out to be problematic, you can simply remove it from your application and
+plug in a different object as its replacement. This is analogous to fixing mechanical problems in the
+real world. If a bolt breaks, you replace it, not the entire machine.
+
+
+
+::What Is a Class?
+
+A Class is a user-defined blueprint or prototype from which objects are created.
+It represents the set of properties or methods that are common to all objects of one type.
+Using classes, you can create multiple objects with the same behavior instead of writing their code
+multiple times. This includes classes for objects occurring more than once in your code.
+
+In general, class declarations can include these components in order:
+
+Modifiers: A class can be public or have default access (Refer to this for details).
+Class name: The class name should begin with the initial letter capitalized by convention.
+Body: The class body is surrounded by braces, { }.
+
+Properties of Java Classes:
+
+Class is not a real-world entity. It is just a template or blueprint, or a prototype from which
+objects are created.
+
+Class does not occupy memory.
+
+A class is a group of variables of different data types and a group of methods.
+
+A Class in Java can contain:
+i. Data member
+ii. Method
+iii. Constructor
+iv. Nested Class
+v. Interface
+
+:: What Is Inheritance?
+
+Object-oriented programming allows classes to inherit commonly used state and behavior from other classes.
+It is the mechanism in Java by which one class is allowed to inherit the features(fields and methods) of
+another class.
+In Java, Inheritance means creating new classes based on existing ones.
+A class that inherits from another class can reuse the methods and fields of that class.
+Inheritance promotes code reusability, method overriding, and polymorphism, which makes the Java program more
+modular and efficient.
+
+Note: In Java, inheritance is implemented using the extends keyword. The class that inherits is called the
+subclass (child class), and the class being inherited from is called the superclass (parent class).
+
+Why Use Inheritance in Java?
+
+Code Reusability:
+The code written in the Superclass is common to all subclasses. Child classes can directly use the parent class code.
+
+Method Overriding:
+Method Overriding is achievable only through Inheritance. It is one of the ways by which Java achieves Run Time
+Polymorphism.
+
+Abstraction:
+The concept of abstraction where we do not have to provide all details, is achieved through inheritance.
+Abstraction only shows the functionality to the user.
+
+that Organizes classes in a structured manner, improving readability and maintainability.
+
+
+
+:: What Is an Interface?
+
+
+Implementing an interface allows a class to become more formal about the behavior it promises to provide.
+Interfaces form a contract between the class and the outside world, and this contract is enforced at build time
+by the compiler. If your class claims to implement an interface, all methods defined by that interface must appear
+ in its source code before the class will successfully compile.
+
+
+
+:: What Is a Package?
+
+A package is a namespace that organizes a set of related classes and interfaces. Conceptually you can think of
+packages as being similar to different folders on your computer. You might keep HTML pages in one folder, images in
+another, and scripts or applications in yet another. Because software written in the Java programming language can
+be composed of hundreds or thousands of individual classes, it makes sense to keep things organized by placing related
+classes and interfaces into packages.
+
+The Java platform provides an enormous class library (a set of packages) suitable for use in your own applications.
+This library is known as the "Application Programming Interface", or "API" for short. Its packages represent the tasks
+most commonly associated with general-purpose programming. For example, a String object contains state and behavior
+for character strings; a File object allows a programmer to easily create, delete, inspect, compare, or modify a file
+on the filesystem; a Socket object allows for the creation and use of network sockets; various GUI objects control
+buttons and check boxes and anything else related to graphical user interfaces. There are literally thousands of
+classes to choose from. This allows you, the programmer, to focus on the design of your particular application, rather
+ than the infrastructure required to make it work.
+
